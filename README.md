@@ -25,7 +25,7 @@
 在 Claude Code 里粘贴这句话：
 
 ```
-请按 https://github.com/jefferyadventure519-byte/ja-davinci-kit 里 INSTALL_FOR_AI.md 的步骤，帮我安装并测试 ja-davinci
+请按 https://github.com/jefferyadventure519-byte/ja-davinci-mcp 里 INSTALL_FOR_AI.md 的步骤，帮我安装并测试 ja-davinci
 ```
 
 Claude 会依次完成：检查环境、下载、安装、注册、自检，最后把结果告诉你。过程中需要你动手的只有几次点击。

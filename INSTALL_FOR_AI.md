@@ -22,8 +22,8 @@
 
 目标位置：`%LOCALAPPDATA%\ja-davinci\kit`。
 
-- 有 git：`git clone https://github.com/jefferyadventure519-byte/ja-davinci-kit.git "%LOCALAPPDATA%\ja-davinci\kit"`
-- 没有 git：下载 `https://github.com/jefferyadventure519-byte/ja-davinci-kit/archive/refs/heads/main.zip`，解压后把里面那层目录改名放到上面的位置。
+- 有 git：`git clone https://github.com/jefferyadventure519-byte/ja-davinci-mcp.git "%LOCALAPPDATA%\ja-davinci\kit"`
+- 没有 git：下载 `https://github.com/jefferyadventure519-byte/ja-davinci-mcp/archive/refs/heads/main.zip`，解压后把里面那层目录改名放到上面的位置。
 
 下载失败多半是访问不了 github.com，请如实告诉使用者，由他解决网络后再继续。
 
