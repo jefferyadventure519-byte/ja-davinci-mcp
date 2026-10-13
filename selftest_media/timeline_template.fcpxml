@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE fcpxml>
+<fcpxml version="1.10">
+<resources>
+<format id="r1" name="FFVideoFormat1080p25" frameDuration="1/25s" width="1920" height="1080"/>
+<format id="r3" frameDuration="1/25s" width="640" height="360"/>
+<asset id="r2" name="clipA_25" start="7200s" format="r3" hasVideo="1" duration="12/1s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"><media-rep kind="original-media" src="__MEDIA_URL__clipA_25.mp4"/></asset>
+<format id="r5" frameDuration="1001/30000s" width="640" height="360"/>
+<asset id="r4" name="clipB_2997df" start="11734723/3000s" format="r5" hasVideo="1" duration="1001/125s"><media-rep kind="original-media" src="__MEDIA_URL__clipB_2997df.mp4"/></asset>
+<asset id="r6" name="overlay_alpha" start="0s" format="r3" hasVideo="1" duration="4/1s"><media-rep kind="original-media" src="__MEDIA_URL__overlay_alpha.mov"/></asset>
+<asset id="r7" name="voice" start="0s" duration="12/1s" hasAudio="1" audioSources="1" audioChannels="1" audioRate="48000"><media-rep kind="original-media" src="__MEDIA_URL__voice.wav"/></asset>
+<effect id="rFX" name="Cross Dissolve" uid="FxPlug:4731E73A-8DAC-4113-9A30-AE85B1761265"/>
+</resources>
+<library><event name="ja_selftest"><project name="ja_selftest"><sequence format="r1" duration="10s" tcStart="0s" tcFormat="NDF" audioLayout="stereo" audioRate="48k"><spine><asset-clip ref="r2" offset="0s" name="main-1" start="7200s" duration="5s"><adjust-volume amount="-96dB"></adjust-volume><asset-clip ref="r4" offset="7202s" name="broll-df" start="11737723/3000s" duration="2s" lane="1"></asset-clip><asset-clip ref="r6" offset="7201s" name="overlay" start="0s" duration="3s" lane="2"></asset-clip><asset-clip ref="r7" offset="7200s" name="VO-1" start="0s" duration="5s" lane="-1"><adjust-volume amount="-7dB"></adjust-volume></asset-clip></asset-clip><asset-clip ref="r2" offset="5s" name="main-2" start="7206s" duration="5s"><adjust-volume amount="-96dB"></adjust-volume><asset-clip ref="r7" offset="7206s" name="VO-2" start="5s" duration="5s" lane="-1"><adjust-volume amount="-7dB"></adjust-volume></asset-clip></asset-clip></spine></sequence></project></event></library>
+</fcpxml>
