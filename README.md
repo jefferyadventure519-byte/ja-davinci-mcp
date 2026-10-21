@@ -67,7 +67,9 @@ Claude 会依次完成：检查环境、下载、安装、注册、自检，最�
 
 ## 卸载
 
-在仓库目录里让 Claude 运行 `python scripts/install.py --uninstall`：去掉 Claude 里的注册和规则技能。下载的文件在 `%LOCALAPPDATA%\ja-davinci`，直接删目录即可。达芬奇脚本目录里的 `resolve_bridge*` 几个文件可以留着，不点就不会运行。
+让 Claude 在 PowerShell 里运行 `python "$env:LOCALAPPDATA\ja-davinci\kit\scripts\install.py" --uninstall`：去掉 Claude 里的注册和规则技能。下载的文件在 `%LOCALAPPDATA%\ja-davinci`，直接删目录即可。达芬奇脚本目录里的 `resolve_bridge*` 几个文件可以留着，不点就不会运行。
+
+从桌面版 Claude 安装的话，下载的文件实际在 `%LOCALAPPDATA%\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Local\ja-davinci`：桌面版会把 `%LOCALAPPDATA%` 下新建的目录放进它自己的私有目录，所以在资源管理器里打开 `%LOCALAPPDATA%\ja-davinci` 是找不到的，要到上面这个位置去删。
 
 ## 致谢
 
